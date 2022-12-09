@@ -28,12 +28,12 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 
 #detail nama perusahaan
 country=ID
-state=Manila
-locality=Manila
-organization=ByteHAX
+state=Jawa Barat
+locality=Bandung
+organization=MOCHVPN
 organizationalunit=IT
-commonname=bytehax.blogspot.com
-email=143Clarkz@gmail.com
+commonname=MOCHVPN
+email=premipahe@gmail.com
 
 # go to root
 cd
@@ -46,7 +46,7 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 apt-get update;apt-get -y install wget curl;
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -69,27 +69,8 @@ apt-get -y install nginx
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
-echo 'echo -e "      # ###       ###                  /"' >> .bashrc
-echo 'echo -e "    /  /###  /     ###               #/"' >> .bashrc
-echo 'echo -e "   /  /  ###/       ##               ##"' >> .bashrc
-echo 'echo -e "  /  ##   ##        ##               ##"' >> .bashrc
-echo 'echo -e " /  ###             ##               ##"' >> .bashrc
-echo 'echo -e "##   ##             ##  ###  /###    ##  /##   ######"' >> .bashrc
-echo 'echo -e "##   ##             ##   ###/ #### / ## / ### /#######"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##   ###/  ##/   / /      ##"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##         ##   /         /"' >> .bashrc
-echo 'echo -e "##   ##             ##    ##         ##  /         /"' >> .bashrc
-echo 'echo -e " ##  ##             ##    ##         ## ##        ###"' >> .bashrc
-echo 'echo -e "  ## #      /       ##    ##         ######        ###"' >> .bashrc
-echo 'echo -e "   ###     /        ##    ##         ##  ###        ###"' >> .bashrc
-echo 'echo -e "    ######/         ### / ###        ##   ### /      ##"' >> .bashrc
-echo 'echo -e "      ###            ##/   ###        ##   ##/       ##"' >> .bashrc
-echo 'echo -e "                                                     /"' >> .bashrc
-echo 'echo -e "                                                    /"' >> .bashrc
-echo 'echo -e "                                                   /"' >> .bashrc
-echo 'echo -e "                                                  /"' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script mod by Clrkz"' >> .bashrc
+echo 'echo -e "Script mod by MOCHVPN"' >> .bashrc
 echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
